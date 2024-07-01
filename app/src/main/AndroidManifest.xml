@@ -17,7 +17,6 @@
             android:name=".MainActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
             android:taskAffinity=""
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
             android:windowSoftInputMode="stateHidden"
@@ -35,7 +34,8 @@
             android:name=".FakeHomeActivity"
             android:enabled="false"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
